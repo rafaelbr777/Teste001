@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botão de amor</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		#botao {
+			background-color: red;
+			color: white;
+			font-size: 24px;
+			padding: 12px 24px;
+			border-radius: 8px;
+			border: none;
+			cursor: pointer;
+		}
+
+		#mensagem {
+			display: none;
+			font-size: 72px;
+			color: red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button id="botao" onclick="mostrarMensagem()">Aperte aqui</button>
+		<div id="mensagem">Te amo, meu bem</div>
+	</div>
+
+	<script>
+		function mostrarMensagem() {
+			var botao = document.getElementById("botao");
+			var mensagem = document.getElementById("mensagem");
+
+			botao.style.display = "none";
+			mensagem.style.display = "block";
+		}
+	</script>
+</body>
+</html>
